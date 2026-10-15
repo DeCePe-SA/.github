@@ -1,0 +1,64 @@
+name: Feature
+description: Ficha de trabajo del tablero DCP (la crea la torre o Cristobal)
+title: "[feature] "
+labels: ["tipo:feature"]
+body:
+  - type: dropdown
+    id: proyecto
+    attributes:
+      label: Proyecto
+      options:
+        - EN GARDE (esgrima)
+        - KantAmigos (karaoke)
+        - Duelo de Hechizos (hechizos)
+        - Agendy
+        - Marketing y Redes
+        - Panel de la torre
+        - Torre v2
+        - Ejecutor de Chrome
+        - Torre
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Qué duele hoy y a quién.
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Antecedentes, enlaces, decisiones previas.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: Checklist; cada línea verificable.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
+  - type: textarea
+    id: como-probar
+    attributes:
+      label: Cómo probar
+      description: Pasos o comando para comprobar que quedó.
+    validations:
+      required: true
+  - type: textarea
+    id: diseno
+    attributes:
+      label: Diseño
+      description: Capturas de antes y propuesta, o escribe "pendiente".
+    validations:
+      required: true
+  - type: input
+    id: ficha
+    attributes:
+      label: Ficha de la torre (ID)
+      description: ID de la ficha en la torre, para no duplicar.
+    validations:
+      required: true
